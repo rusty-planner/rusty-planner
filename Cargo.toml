@@ -1,0 +1,20 @@
+[package]
+name = "rusty-planner"
+version = "0.1.0"
+authors = ["Douile <25043847+Douile@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.actix-web]
+version = "^3"
+
+[dependencies.postgres]
+version = "^0.19"
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dependencies.serde_json]
+version = "^1.0"
