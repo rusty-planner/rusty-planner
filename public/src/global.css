@@ -1,0 +1,42 @@
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  color: var(--foreground);
+  background: var(--hl-background);
+  padding: 0.5em;
+  border-radius: 0.25em;
+  border: 0;
+}
+
+button:active,button:hover {
+  background: var(--ac-background);
+}
+
+:root {
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+:root, :root[theme=dark] {
+  --background: #30292F;
+  --foreground: #FFFFFF;
+  --hl-background: #413F54;
+  --ac-background: #5F5AA2;
+}
+
+:root[theme=light] {
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --hl-background: #DEDEDE;
+  --ac-hackground: #CACACA;
+}
+
+* {
+  box-sizing: border-box;
+}

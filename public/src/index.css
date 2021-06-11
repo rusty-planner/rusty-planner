@@ -1,0 +1,39 @@
+header {
+  height: 4em;
+  padding: 0.5em;
+  padding-right: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#user-button[href="/api/oauth/redirect"] {
+  background: #5865F2;
+  color: #FFFFFF;
+  border-radius: 0.25em;
+  padding: 0.5em;
+}
+
+#user-button img {
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+}
+
+section[for=no-session] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section[for=session] {
+  display: none;
+}
+
+:root[data-user] section[for=no-session] {
+  display: none;
+}
+
+:root[data-user] section[for=session] {
+  display: block;
+}

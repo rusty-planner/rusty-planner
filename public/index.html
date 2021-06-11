@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rusty Planner</title>
+    <link rel="stylesheet" href="/src/global.css">
+    <link rel="stylesheet" href="/src/index.css">
+    <script async="" src="/src/rusty.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Rusty planner</h1>
+      <a id="user-button" href="/api/oauth/redirect">Login with discord</a>
+    </header>
+    <main>
+      <section for="no-session">
+        <article>
+          <h2>Welcome to rusty-planner</h2>
+          <p>An open-source project that allows you to plan events with discord integration</p>
+          <p>To start press sign-in with discord in the top right</p>
+        </article>
+      </section>
+      <section for="session">
+        <h2>Groups</h2>
+        <div id="user-groups"></div>
+        <p><button id="create-group">Create new group</button></p>
+      </section>
+    </main>
+  </body>
+</html>

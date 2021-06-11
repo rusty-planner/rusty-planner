@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>404: Not found</title>
+    <style>
+      body {
+        display: flex;
+        position: absolute;
+        height: 70%;
+        max-height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        background-color: #1e1e1e;
+        color: #fff;
+      }
+      body > div {
+        padding: 2em;
+        border-radius: 15px;
+        background-color: #3a3c3c;
+        text-align: center;
+      }
+      a {
+        color: #f1f4f1;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      a:hover, a:active, a:focus {
+        text-decoration: underline;
+      }
+      * { box-sizing: border-box; }
+    </style> 
+  </head>
+  <body>
+    <div>
+      <h2>404: Not found</h2>
+      <p>The requested <span id="page">page</span> does not exist.</p>
+      <a href="/">Return to safety</a>
+    </div>
+    <script async="">
+      document.getElementById("page").innerText += ` "${location.pathname}"`;
+    </script>
+  </body>
+</html>
